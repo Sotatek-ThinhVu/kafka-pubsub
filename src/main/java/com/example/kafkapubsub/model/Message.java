@@ -7,7 +7,7 @@ import lombok.*;
 @Getter
 @Setter
 @Data
-public class MessageRequest {
+public class Message {
     private String message;
     public String message(){
         return message;
