@@ -59,10 +59,10 @@ services:
       AUTH_TYPE: "LOGIN_FORM"
       SPRING_SECURITY_USER_NAME: ${KAFKA_UI_USER:-admin}
       SPRING_SECURITY_USER_PASSWORD: ${KAFKA_UI_PASSWORD:-pass}
+      DYNAMIC_CONFIG_ENABLED: 'true'
     networks:
       - cardano-infrastructure-net
 
 
 networks:
   cardano-infrastructure-net:
-    driver: bridge
